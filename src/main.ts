@@ -21,7 +21,6 @@ async function bootstrap() {
   app.useGlobalFilters(new RcpCustomExceptionFilter);
 
   await app.listen(envs.port);
-  console.log('Primer cambio');
   logger.log(`Running on port ${envs.port}`)
 }
 bootstrap();
